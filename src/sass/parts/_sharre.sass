@@ -1,0 +1,57 @@
+.sharre
+    padding: 7px 10px
+    background-color: #f4f3f3
+
+.sharre-costum
+    padding: 2px 6px  0px 5px 
+    @include radius(2px)
+    position: relative
+    background-color: #90d4f5
+    transform: translate(17px, 0px)
+
+.sharre-costum:before
+    content: ''
+    display: block
+    position: absolute
+    right: 0px
+    bottom: -5px    
+    border: 3px solid transparent
+    border-left: 3px solid $color-2
+    border-top: 3px solid $color-2
+
+.sharre-link > span[class^="icon-"], [class*=" icon-"] 
+    &:before
+        font-size: 16px
+        color: $white-color
+        vertical-align: middle
+        margin-right: 7px
+
+.sharre-link:hover
+    span[class^="icon-"], [class*=" icon-"] 
+        &:before
+            color: $color-2
+            
+.sharre-link-like
+    margin-right: 5px
+
+.sharre-descr
+    vertical-align: sub
+    font-weight: bold
+    color: $color-2
+
+.icon-base-color:before
+    color: #90d4f5
+
+@media(min-width: 768px)
+    .sharre-costum
+        transform: translate(48px,0px)
+        padding: 2px 6px  0px 15px
+    .sharre-link-like
+        margin-right: 15px
+
+@media(min-width: 992px)
+    .sharre-costum
+        transform: translate(47px,0px)
+        padding: 2px 6px  0px 15px
+    .sharre-link-like
+        margin-right: 15px

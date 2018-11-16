@@ -1,0 +1,75 @@
+/* REASON */
+
+.reason
+    padding-top: 27px
+    padding-left: 13px
+    background-color: $white-color
+    margin-top: -10px
+    border-top: 2px solid $color-3
+    border-bottom: 1px dotted $color-gray
+    border-right: 1px dotted $color-gray
+    border-radius: 0px 0px 4px 0px
+    padding-bottom: 20px
+    
+.reason > .title
+    margin-bottom: 13px
+
+.reason-author
+    width: 130px
+    margin-right: 20px
+    
+.reason-box
+    line-height: 18px
+    padding-right: 10px
+
+.reason-rect
+    float: left
+    background-color: $color-3
+    text-align: center
+    display: inline-block
+    width: 49px
+    height: 49px
+    margin-right: 12px
+    margin-bottom: 5px
+    border-radius: 50%
+  
+
+.reason-rect-img
+    background-image: url(../img/reason.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-color: $color-3
+
+
+.reason-rect > span
+    vertical-align: middle
+    font-size: 8px
+    color: $white-color
+    margin-top: 19px
+    display: inline-block
+
+.reason-btn-box
+    margin-top: 26px
+    display: flex
+    justify-content: space-between
+    
+@media(min-width: 768px)
+    .reason-author
+        display: inline-block
+    .reason-rect
+        float: none
+    .reason-rect:nth-of-type(2)
+        margin-right: 15px
+    .reason-author
+        width: 130px
+        display: block
+        margin-right: 10px
+        float: left
+    .reason-box
+        width: calc(100% - 170px)
+        display: inline-block
+
+@media(min-width: 992px)
+    .reason-box
+        padding-right: 10px
+

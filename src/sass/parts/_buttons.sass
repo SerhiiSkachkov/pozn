@@ -1,0 +1,37 @@
+.btn
+    display: inline-block
+    padding: 3px 12px 
+    color: $white-color
+    @include radius(2px)
+    border: 1px solid $color-2 / 2
+    background: linear-gradient(to bottom, rgba(32,124,202,1) 6%,rgba(52,99,153,1) 10%,rgba(30,87,153,1) 56%,rgba(30,87,153,1) 100%,rgba(96,137,178,1) 100%)
+
+.btn:hover
+	@include transition(0.7s) 
+	background: $white-color
+	color: $color-2
+
+.btn-black-line
+	position: relative
+
+.btn-black-line:before
+	content: ''
+	display: block
+	width: 71px
+	height: 2px
+	position: absolute
+	background-color: black
+	left: -1px
+	right: 0
+	bottom: -2px
+
+.btn-black-line:after
+	content: ''
+	display: block
+	width: 71px
+	height: 2px
+	position: absolute
+	background-color: gray
+	left: -1px
+	right: 0
+	bottom: -4px

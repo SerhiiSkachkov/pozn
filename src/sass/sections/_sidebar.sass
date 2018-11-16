@@ -1,0 +1,106 @@
+.main-block
+    border-bottom: 1px dotted #5c5c5c
+    @media(min-width: 450px)
+        width: calc(100% - 165px)
+        border-left: 1px dotted $color-gray
+        
+.wrapper-content
+    border-top: 2px solid $color-3
+
+.wrapper-content-box
+    display: flex
+    flex-direction: column
+    @media(min-width: 450px)
+        flex-direction: row
+
+/* SIDEBAR */
+
+.sidebar
+    border-bottom: 1px dotted #5c5c5c
+    @media(min-width: 440px)
+        width: 165px
+    @media(min-width: 768px)
+        width: 203px
+
+.author
+    padding-top: 32px
+    padding-right: 15px
+    padding-bottom: 14px
+    border-bottom: 1px dotted $color-gray
+
+.author > .title
+    margin-bottom: 10px
+
+.author-txt
+    @include font(10px,18px)
+
+.author-txt > span
+    font-weight: bold
+
+/* POST */
+.post
+    padding-top: 18px
+    padding-bottom: 12px
+    border-bottom: 1px dotted $color-gray
+    
+.post >.title
+    margin-bottom: 12px
+
+.post-item
+    display: block
+    color: $color-gray
+    margin-bottom: 9px
+
+.post-item:hover
+    .post-content > h4
+        color: $color-2
+
+.post-img
+    display: inline-block
+    width: 50px
+    height: 43px
+
+.post-img > img
+    width: 100%
+
+.post-content
+    display: inline-block
+
+.post-img
+    margin-right: 15px
+
+.post-content
+    vertical-align: top
+    margin-top: 5px
+    font-style: italic
+
+.post-content > h4
+    margin-bottom: 3px
+
+.post-content > span[class^="icon-"]:before
+    font-size: 16px
+    vertical-align: middle
+    margin-right: 5px
+
+/* COURRENCY */
+.courrency
+    padding-top: 22px
+    padding-bottom: 42px
+
+.courrency > .title
+    margin-bottom: 7px
+
+.courrency-table
+    text-align: center
+    
+.courrency-table-head > td
+    color: $white-color
+    padding: 5px 7px 
+    background-color: $color-2
+    border: 1px solid $white-color
+
+.courrency-table-body > tr > td
+    padding: 3.5px 8px
+    border: 1px solid $white-color
+    background-color: #b1e1f8
+    color: $color-2

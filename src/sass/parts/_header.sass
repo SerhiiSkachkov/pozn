@@ -1,0 +1,66 @@
+
+.header
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    padding-top: 23px
+    padding-bottom: 5px
+    background-color: $white-color
+    border-bottom: 3px solid $color-3
+
+.logo
+    text-transform: uppercase
+    color: $color-2
+    font-family: $second-font-family
+    font-size: 25px
+
+.header-top
+    padding: 10px 0px
+
+.header-top-box
+    max-width: 565px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+.nav
+    padding: 10px 0px
+    max-width: 360px
+    margin: 0 auto
+    padding-right: 10px
+
+.nav-list
+    display: flex
+    justify-content: space-between
+    
+.nav-list > li 
+    display: inline-block
+    
+.nav-list > li > a
+    text-transform: uppercase
+    color: #858585
+    padding: 3px 10px
+    border: 1px solid transparent
+    &:hover
+        @extend .nav-link-active
+
+.nav-link-active
+    color: $white-color!important
+    @include radius(2px)
+    border: 1px solid $color-2
+    background: linear-gradient(to bottom, rgba(32,124,202,1) 6%,rgba(52,99,153,1) 10%,rgba(30,87,153,1) 56%,rgba(30,87,153,1) 100%,rgba(96,137,178,1) 100%)
+
+@media(min-width: 768px)
+    .header-top-box
+        margin: 0 auto
+    .logo
+        font-size: 32px
+    
+    .nav-list > li > a
+        padding: 4px 17px
+
+@media(min-width: 992px)
+    .header-top-box
+        padding-right: 0px
+        margin-left: auto
+        margin-right: 0px

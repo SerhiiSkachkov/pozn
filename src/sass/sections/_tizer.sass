@@ -1,0 +1,91 @@
+.tizer
+    margin-top: 110px
+    background: url(../img/tizer-bg.jpeg) center top no-repeat/cover
+    display: flex
+    flex-direction: column
+
+.tizer-top
+    padding-top: 50px
+    text-align: center
+    
+.tizer-subtitle
+    color: $color-2
+    font-family: $second-font-family
+    text-transform: uppercase
+    font-size: 20px
+    line-height: 20px
+    display: inline-block
+    padding: 8px 14px
+    background-color: rgba(255, 255, 255, .6313725490196078)
+
+@media(min-width: 768px)
+    .tizer-subtitle
+        font-size: 30px
+        line-height: 30px
+  
+@media(min-width: 992px)
+    .tizer-top
+        padding-top: 92px
+        padding-bottom: 77px
+
+.person
+    padding: 25px 0px
+    background: rgba(0, 0, 0, 0.47058823529411764)
+    width: 100%
+    align-self: flex-end
+
+.person-list
+    display: flex
+    flex-direction: column
+
+.person-item
+    width: 192px
+    background: linear-gradient(to right, rgba(237,237,236,0) 15%,rgba(237,237,236,1) 14%,rgba(237,237,236,1) 85%,rgba(237,237,236,1) 100%)
+    margin: 0 auto 15px
+
+.person-img
+    display: inline-block
+    vertical-align: top
+    
+.person-img> img
+    display: block
+
+.person-txt
+    padding: 8px 0px 0px 15px
+    display: inline-block
+    font-style: italic
+    @include font(9px, 14px)
+
+.person-author
+    font-style: normal
+
+@media(min-width: 440px)
+    .person-list
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+    .person-list
+        width: calc(192px * 2 + 40px)
+        margin: 0 auto
+   
+@media(min-width: 600px)
+    .person-item
+        margin: 10px
+
+@media(min-width: 850px)
+    .person-item
+        margin: 0px
+    .person-list
+        width: auto
+        justify-content: space-between
+
+@media(min-width: 992px)
+    .person-list
+        width: calc(192px * 4 + 155px)
+        margin: 0 auto
+
+@media(min-width: 1200px)
+    .person-list
+        margin: 0px
+        padding-left: 10px
+        padding-right: 0px

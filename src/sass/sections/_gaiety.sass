@@ -1,0 +1,76 @@
+.gaiety
+    padding-top: 20px
+    padding-left: 13px
+    
+.gaity-clmn
+    background-color: #eaeaea
+    padding-top: 23px
+    margin-bottom: 20px
+    border-radius: 15px 0px 0px 0px
+    position: relative
+
+.gaity-row
+    width: 100%
+    margin-bottom: 10px
+
+.gaity-row-box
+    z-index: 99
+    display: table
+    width: 100%
+    position: relative
+    background: linear-gradient(to bottom, rgba(232,231,231,1) 1%,rgba(244,243,243,1) 100%)
+    height: 81px
+
+.gaity-row-txt
+    text-align: center
+    display: table-cell
+    vertical-align: middle
+    font-size: 12px
+
+.gaity-clmn > .sharre
+    text-align: right
+    position: absolute
+    bottom: 0px
+    left: 0px
+    right: 0px
+    z-index: 999
+
+.gaity-clmn-box
+    padding: 0px 15px 40px
+    position: relative
+    z-index: 99
+
+.gaity-clmn-box > .title
+    margin-bottom: 4px
+
+.gaity-clmn:nth-of-type(1) .gaity-clmn-box > .gaity-posted
+    margin-bottom: 29px
+
+.gaity-clmn > .title
+    margin-bottom: 4px
+
+.gaity-posted
+    margin-bottom: 10px
+
+.gaity-txt
+    line-height: 18px
+    margin-bottom: 2px
+
+.gaity-link
+    color: $color-2
+
+@media(min-width: 575px)
+    .gaiety-box
+        display: flex
+        justify-content: space-between
+        flex-flow: wrap
+    .gaity-clmn
+        width: 49%
+    .gaity-row
+        margin-top: 8px
+
+@media(min-width: 992px)
+    .gaity-txt
+        padding-right: 0px
+    .gaity-clmn-box
+        padding: 0px 10px 38px 30px

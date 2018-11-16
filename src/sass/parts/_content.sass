@@ -1,0 +1,211 @@
+.main-wrapper 
+    padding: 0
+    min-width: $min-width
+    width: 100%
+    position: relative
+    overflow: hidden
+    min-height: 100%
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    justify-content: flex-start
+    -webkit-justify-content: flex-start
+    -ms-flex-pack: start
+
+.wrapper 
+    min-width: $min-width
+    max-width: $max-width
+    padding: 0 10px 0 10px
+    margin: 0 auto
+    position: relative
+    @media(min-width: 768px)
+        padding: 0 15px 0 15px
+
+.title
+    font-family: $second-font-family
+    color: $color-2
+    text-transform: uppercase
+    
+.title-large
+    @include font(60px,60px)
+    background-color: rgba(255, 255, 255, 0.6313725490196078)
+    padding: 12px 30px 8px
+    width: 290px
+    margin: 0 auto 20px
+    font-weight: normal
+
+.title-medium
+    font-size: 32px
+
+.title-small
+    @include font(22px,22px)
+
+/* text position */
+
+.text-color-base-light
+    color: $color-3
+
+.text-color-base-dark
+    color: $color-2
+
+.text-left 
+    text-align: left!important
+
+.text-center 
+    text-align: center!important
+
+.text-right 
+    text-align: right!important
+
+.nowrap 
+    white-space: nowrap!important
+
+/*include icon*/
+
+.icon-arrow-up
+    @include sprite($arrow-up)
+
+.icon-arrow-down
+    @include sprite($arrow-down)
+    
+/* loader */
+
+.loaded .main-wrapper 
+    visibility: hidden
+
+.icon-load 
+    background: url(../img/loader.gif) no-repeat left top
+    width: 40px
+    height: 40px
+    position: fixed
+    left: 50%
+    top: 50%
+    margin-left: -20px
+    margin-left: -20px
+    display: none
+
+.loaded .icon-load 
+    display: block
+
+.content 
+    min-width: $min-width
+    text-align: left
+    width: 100%
+    order: 2
+    -webkit-order: 2
+    flex-grow: 1
+    -webkit-flex-grow: 1
+    background: #fff
+
+/* Socials */
+
+.social
+    padding-top: 3px
+    
+.social > li
+    display: inline-block
+    vertical-align: top
+    margin: 0px 2px
+    
+.social-link > [class^="icon-"], [class*=" icon-"]
+    &:before
+        font-size: 16px
+
+.social-link:hover  
+    & [class^="icon-"], [class*=" icon-"]
+        &:before
+            color: $color-2
+
+/* Shadow after block*/    
+
+.shadow
+    position: relative
+
+.shadow-large:before
+    transform:  rotate(-1deg)!important
+
+.shadow-large:after
+    transform:  rotate(1deg)!important
+
+.shadow:before
+    content: ''
+    display: block
+    position: absolute
+    width: 50%
+    height: 10px
+    bottom: 6px
+    left: 5px
+    transform:  rotate(-1.7deg)
+    box-shadow: 0 6px 5px black
+    -ms-box-shadow: 0 6px 5px black
+
+.shadow:after
+    content: ''
+    display: block
+    position: absolute
+    width: 50%
+    height: 10px
+    bottom: 6px
+    right: 5px
+    transform: rotate(1.7deg)
+    box-shadow: 0 6px 5px black
+    -ms-box-shadow: 0 6px 5px black
+
+/* Section inform*/
+
+.inform
+    padding-top: 15px
+
+
+.inform-nav
+    padding-top: 10px
+
+.inform-nav-box 
+    text-align: center
+    border-bottom: 1px dotted $color-gray
+    padding-bottom: 4px
+
+.inform-box > .title
+    margin-bottom: 15px
+
+.inform-nav-box > .nav
+    padding-right: 0px
+    width: 266px
+
+.inform-nav-box > .logo
+    font-size: 16px
+
+.nav-bot > .nav-list > li > a 
+    padding: 4px 3px
+
+#map
+    height: 200px
+    border-top: 1px solid gray
+    border-bottom: 1px solid gray
+    box-shadow: 1px 0px 1px 1px rgba(0,0,0,0.46)
+    -ms-box-shadow: 1px 0px 1px 1px rgba(0,0,0,0.46)
+
+
+
+@media(min-width: 768px)
+    .inform-nav-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .nav-bot
+        margin: 0px!important
+
+/* FOOTER*/
+.foo
+    order: 3
+    padding: 5px 0px
+
+.foo-text
+    padding: 7px 0px
+    text-transform: uppercase
+    text-align: center
